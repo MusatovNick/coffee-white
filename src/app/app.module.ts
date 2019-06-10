@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { routing } from "./app.routing";
+import { HomePageComponent } from './components/pages/home-page/home-page.component';
+import { AboutPageComponent } from './components/pages/about-page/about-page.component';
+import { PortfolioPageComponent } from './components/pages/portfolio-page/portfolio-page.component';
+import { BlogPageComponent } from './components/pages/blog-page/blog-page.component';
+import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HomePageComponent,
+    AboutPageComponent,
+    PortfolioPageComponent,
+    BlogPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]
