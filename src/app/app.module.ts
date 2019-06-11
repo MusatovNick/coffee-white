@@ -10,6 +10,7 @@ import { PortfolioPageComponent } from './components/pages/portfolio-page/portfo
 import { BlogPageComponent } from './components/pages/blog-page/blog-page.component';
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { CarouselItemDirective } from './directives/carousel-item.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     PortfolioPageComponent,
     BlogPageComponent,
     ContactPageComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselItemDirective,
   ],
   imports: [
     BrowserModule,
